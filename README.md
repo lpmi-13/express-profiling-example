@@ -10,7 +10,11 @@ First, install the node modules via `npm i`. Then run the server with profiling 
 NODE_ENV=production node --prof ./bin/www
 ```
 
-once the server is running, in a separate terminal window, create a new user with `curl "localhost:3000/newUser?username=matt&password=password"`.
+once the server is running, in a separate terminal window, create a new user with
+
+```
+curl "localhost:3000/newUser?username=matt&password=password"
+```
 
 Then, once the user is created, we can run apache bench to see how long the `/auth` endpoint takes.
 
